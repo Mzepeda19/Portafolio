@@ -6,22 +6,169 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+	<style>
+        body {
+            background-color: #f4f4f9;
+            color: #333;
+            font-family: Arial, sans-serif;
+        }
+
+        h1, h2, h3 {
+            color: #0056b3;
+        }
+
+        a {
+            color: #007bff;
+        }
+
+        .card {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .card button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        .card button:hover {
+            background-color: #0056b3;
+        }
+
+        input[type="text"], input[type="email"], textarea {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+        button[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        section#contacto {
+            background-color: #f9f9f9;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .skills-circle {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            margin: 50px auto;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .skills-circle .skill {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            background: white;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .bold-links {
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer .menu {
+            list-style: none;
+            padding: 0;
+        }
+
+        footer .menu li {
+            margin: 5px 0;
+        }
+
+        footer .icons a {
+            color: #F5F5DC;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body class="is-preload">
 
 	<!-- Header -->
 	<header id="header">
-		<a href="index.html" class="title">Mi espacio</a>
+		<a class="title">Mi espacio</a>
 		<nav>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="generic.html">Hiskills</a></li>
-				<li><a href="elements.html" class="active">Proyectos</a></li>
-			</ul>
+            <ul>
+                <li><a href="#main" class="bold-links">Home</a></li>
+                <li><a href="#proyectos" class="bold-links">Proyectos</a></li>
+                <li><a href="#hiskills" class="bold-links">Habilidades</a></li>
+            </ul>
 		</nav>
 	</header>
 
-	<!-- Wrapper -->
+    <section class="hero text-center d-flex align-items-center justify-content-center">
+        <div class="container">
+        </div>
+    </section>
+    
+
+    <!-- Wrapper -->
 	<div id="wrapper">
 
 		<!-- Main -->
@@ -31,24 +178,16 @@
 
 				<!-- Text Section -->
 				<section>
-					<h2>¿Quién soy?</h2>
-					<p>Profesional de TI <b>apasionado por la tecnología y el aprendizaje continuo.</b> Destaco por mi capacidad de análisis, resolución de problemas y enfoque en la eficiencia operativa. </p>
+                    <h1 class="fw-bold">Hola, soy <span class="text-warning">Mariana</span></h1>
+                    <p class="fs-4">Desarrolladora Full Stack | Analista de Datos</p>
+					<h2>Pero... ¿Quién soy?</h2>
+					<p>Soy profesional de TI apasionado por la tecnología y el aprendizaje continuo. Destaco por mi capacidad de análisis, resolución de problemas y enfoque en la eficiencia operativa. </p>
 					<p>Meticulosa en la gestión de proyectos, con habilidades en desarrollo web, administración de CRM y análisis de datos <em>con mentalidad proactiva, trabajo en equipo y siempre buscando mejorar mis conocimientos para optimizar procesos y crear soluciones innovadoras</em>.</p>
 					<hr />
-					<h3>Blockquote</h3>
+					<h3>Frase que me inspira</h3>
 					<blockquote>
 						"La tecnología está transformando rápidamente todos los aspectos de nuestra vida cotidiana, desde cómo nos comunicamos hasta cómo trabajamos y aprendemos. Con el avance constante de la inteligencia artificial, la computación en la nube y el Internet de las cosas, las posibilidades para el futuro son infinitas."
 					</blockquote>
-					<h3>Juega conmigo:</h3>
-					<pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 				</section>
 
 				<!-- Lists Section -->
@@ -56,13 +195,13 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					<h2>Habilidades</h2>
 					<div class="row">
 						<div class="col-6 col-12-medium">
-							<h3>Habilidades clave</h3>
+							<h3>Habilidades principales</h3>
 							<ul>
 								<li>Innovación constante en el desarrollo de soluciones tecnológicas.</li>
 								<li>Implementación de mejoras en el servicio al cliente.</li>
 								<li>Optimización de procesos mediante herramientas de análisis de datos.</li>
 							</ul>
-							<h3>Destrezas adicionales</h3>
+							<h3>Competencias adicionales</h3>
 							<ul class="alt">
 								<li>Colaboración efectiva en equipos multidisciplinarios.</li>
 								<li>Desarrollo de aplicaciones web con enfoque en la usabilidad.</li>
@@ -70,7 +209,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 							</ul>
 						</div>
 						<div class="col-6 col-12-medium">
-							<h3>Ordenadas</h3>
+							<h3>Habilidades Organizadas</h3>
 							<ol>
 								<li>Análisis de datos para la toma de decisiones estratégicas.</li>
 								<li>Gestión y administración de sistemas CRM.</li>
@@ -79,65 +218,197 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 								<li>Desarrollo de proyectos web integrales.</li>
 								<li>Colaboración en proyectos interdepartamentales para mejorar la productividad.</li>
 							</ol>
-							<h3>Redes sociales</h3>
-							<ul class="icons">
-								<li><a href="https://www.linkedin.com/in/mariana-zepeda-443679280" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-								<li><a href="https://www.facebook.com/mariana.osorniozepeda/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="https://www.instagram.com/m__zepeda/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="https://github.com/dashboard" class="icon brands fa-github"><span class="label">Github</span></a></li>
-							</ul>
 						</div>
 					</div>
 				</section>
 
-				<!-- Image Section -->
-				<section>
-					<h2>Proyectos realizados</h2>
-					<div class="box alt">
-						<div class="row gtr-uniform">
-							<div class="col-12"><span class="image fit"><img src="./images/Chicharrikos1.png" alt="" /></span></div>
-							<div class="col-4"><span class="image fit"><img src="./images/Chicharrikos3.png" alt="" /></span></div>
-							<div class="col-4"><span class="image fit"><img src="./images/Chicharrikos4.png" alt="" /></span></div>
-							<div class="col-4"><span class="image fit"><img src="./images/Chicharrikos5.png" alt="" /></span></div>
-							<div class="col-4"><span class="image fit"><img src="./images/Deportiva1.png" alt="" /></span></div>
-							<div class="col-4"><span class="image fit"><img src="./images/Deportiva2.png" alt="" /></span></div>
-							<div class="col-4"><span class="image fit"><img src="./images/Deportiva3.png" alt="" /></span></div>
+                <!-- Image Section -->
+				<section id="proyectos" class="wrapper">
+					<div class="inner">
+						<h1>Proyectos en los que he trabajado</h1>
+						<div class="row">
+							<div class="col-6">
+								<div class="card">
+									<img src="./images/Chicharrikos3.png" alt="Proyecto de Chicharrikos" class="card-img" />
+									<h3>Chicharrikos</h3>
+									<p>Plataforma de ecommerce especializada en productos exclusivos de tecnología y moda.</p>
+									<button onclick="window.location.href='https://github.com/tu-repositorio'">Ver en GitHub</button>
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="card">
+									<img src="./images/Deportiva.jpg" alt="Landing page Deportiva" class="card-img" />
+									<h3>Landing Deportiva</h3>
+									<p>Landing page interactiva para mujeres deportistas con animaciones y carrito de compras.</p>
+									<button onclick="window.location.href='https://github.com/tu-repositorio'">Ver en GitHub</button>
+								</div>
+							</div>
 						</div>
 					</div>
-					<hr />
-					<h3>Chicharrikos</h3>
-					<p><span class="image left"><img src="./images/chicharrikos.png" alt="" /></span>Chicharrikos es una plataforma de ecommerce especializada en ofrecer productos exclusivos y de alta calidad para los amantes de la tecnología y la moda. Nuestro objetivo es ofrecer a nuestros clientes una experiencia de compra única, con productos seleccionados cuidadosamente para satisfacer sus necesidades y gustos.</p>
-					<p><strong>¿Qué nos hace diferentes?</strong></p>
-					<ul>
-						<li><strong>Variedad de productos:</strong> Desde gadgets tecnológicos hasta accesorios de moda, tenemos lo que necesitas para mantenerte a la vanguardia.</li>
-						<li><strong>Atención al cliente excepcional:</strong> Nuestro equipo está siempre disponible para ayudarte y garantizar que tu experiencia de compra sea impecable.</li>
-						<li><strong>Precios competitivos:</strong> Nos aseguramos de ofrecer productos a precios accesibles sin comprometer la calidad.</li>
-					</ul>
 				</section>
 
-			</div>
-		</section>
+<!-- HiSkills Section -->
+<section id="hiskills" class="wrapper">
+    <div class="inner">
+        <h1 class="major">HiSkills</h1>
+        <p>Estas son algunas de las tecnologías y herramientas con las que trabajo:</p>
 
-	</div>
+        <div class="row">
+            <!-- HTML -->
+            <div class="col-4">
+                <div class="card">
+                    <i class="fa-brands fa-html5 fa-4x" style="color:#E44D26;"></i>
+                    <h3>HTML5</h3>
+                    <p>Lenguaje de marcado para estructurar el contenido web.</p>
+                </div>
+            </div>
 
-	<!-- Footer -->
-	<footer id="footer" class="wrapper alt">
-		<div class="inner">
+            <!-- CSS -->
+            <div class="col-4">
+                <div class="card">
+                    <i class="fa-brands fa-css3-alt fa-4x" style="color:#1572B6;"></i>
+                    <h3>CSS3</h3>
+                    <p>Diseño y estilos avanzados para mejorar la apariencia web.</p>
+                </div>
+            </div>
+
+            <!-- JavaScript -->
+            <div class="col-4">
+                <div class="card">
+                    <i class="fa-brands fa-js fa-4x" style="color:#F7DF1E;"></i>
+                    <h3>JavaScript</h3>
+                    <p>Lenguaje de programación para agregar interactividad a los sitios web.</p>
+                </div>
+            </div>
+
+            <!-- Bootstrap -->
+            <div class="col-4">
+                <div class="card">
+                    <i class="fa-brands fa-bootstrap fa-4x" style="color:#7952B3;"></i>
+                    <h3>Bootstrap</h3>
+                    <p>Framework para crear sitios web responsivos y modernos.</p>
+                </div>
+            </div>
+
+            <!-- React -->
+            <div class="col-4">
+                <div class="card">
+                    <i class="fa-brands fa-react fa-4x" style="color:#61DAFB;"></i>
+                    <h3>React.js</h3>
+                    <p>Biblioteca de JavaScript para construir interfaces de usuario dinámicas.</p>
+                </div>
+            </div>
+
+            <!-- Node.js -->
+            <div class="col-4">
+                <div class="card">
+                    <i class="fa-brands fa-node fa-4x" style="color:#83CD29;"></i>
+                    <h3>Node.js</h3>
+                    <p>Entorno de ejecución de JavaScript en el servidor.</p>
+                </div>
+            </div>
+
+            <!-- SQL -->
+            <div class="col-4">
+                <div class="card">
+                    <i class="fa-solid fa-database fa-4x" style="color:#4479A1;"></i>
+                    <h3>SQL</h3>
+                    <p>Lenguaje para gestión y manipulación de bases de datos.</p>
+                </div>
+            </div>
+
+            <!-- Git -->
+            <div class="col-4">
+                <div class="card">
+                    <i class="fa-brands fa-git-alt fa-4x" style="color:#F05032;"></i>
+                    <h3>Git</h3>
+                    <p>Control de versiones para gestionar proyectos de desarrollo.</p>
+                </div>
+            </div>
+
+            <!-- GitHub -->
+            <div class="col-4">
+                <div class="card">
+                    <i class="fa-brands fa-github fa-4x" style="color:#181717;"></i>
+                    <h3>GitHub</h3>
+                    <p>Plataforma para alojar código y colaborar en proyectos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container my-5">
+    <h2 class="text-center mb-4">Blog y Experiencias</h2>
+    <div class="row">
+        <!-- Artículo 2: Experiencia en Hackatón -->
+        <article class="col-md-4">
+            <div class="card-flip">
+                <div class="card">
+                    <!-- Parte delantera de la tarjeta -->
+                    <div class="card-front">
+                        <img src="./images/hackaton.jpg" class="card-img-top" alt="Hackatón" style="object-fit: cover; height: 200px; width: 100%;">
+                    </div>
+        
+                    <!-- Parte trasera de la tarjeta (con el texto) -->
+                    <div class="card-back">
+                        <div class="card-body">
+                            <h3 class="card-title">Mi experiencia en un Hackatón</h3>
+                            <p class="card-text">
+                                Durante un intensivo de 48 horas, mi equipo y yo creamos una aplicación desde cero. A lo largo del proceso, enfrentamos retos, pero los superamos gracias al trabajo en equipo, y al final logramos entregar una solución funcional y completa.
+                            </p>
+                            <p class="card-text">
+                                En este hackatón, trabajé con 4 compañeras en el desarrollo de una página web deportiva dirigida a mujeres. Nos centramos en intercambiar ideas y ajustar el diseño según las necesidades del proyecto. A pesar de los desafíos que surgieron, pudimos llevar nuestra visión a cabo y entregar una solución tal como la habíamos planeado.
+                            </p>
+                            <!-- Botón para redirigir a la página del blog -->
+                            <a href="#proyectos" class="btn btn-primary">Si quieres conocer el resultado te invito a dar clic aquí</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+<section id="contact" class="container my-5 text-center">
+    <p>¿Interesado en mi perfil? Descarga mi CV y conéctate conmigo.</p>
+    <a href="./CV.pdf" class="btn btn-primary btn-lg mt-3" download>
+        <i class="fas fa-file-download"></i> Descargar CV
+    </a>
+</section>
+
+<!-- Sección de Contacto -->
+<section id="contacto" class="container my-5">
+    <h2 class="text-center mb-4">Si estás interesado en mi CV no dudes en contactarme</h2>
+    <form action="enviar.php" method="post" class="text-center">
+        <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4" class="form-control" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg mt-3">Enviar</button>
+    </form>
+</section>
+<hr />
+		<!-- Footer -->
+		<footer>
+			<p>Mi portafolio, todos los derechos reservados.</p>
 			<ul class="menu">
-				<li>&copy; Mi espacio. Todos los derechos reservados.</li>
-				<li>Diseño: <a href="http://html5up.net">HTML5 UP</a></li>
+				<li><a href="https://www.linkedin.com/in/mariana-zepeda-443679280"  class="icon brands fa-linkedin" style="color: #F5F5DC;"><span class="label">LinkedIn</span></a></li>
+                <li><a 
+				<li><a href="https://github.com/dashboard"  class="icon brands fa-github" style="color: #F5F5DC;"><span class="label">Github</span></a></li>
+				<li><a href="https://www.facebook.com/mariana.osorniozepeda/" class="icon brands fa-facebook-f" style="color: #F5F5DC;"><span class="label">Facebook</span></a></li>
 			</ul>
-		</div>
-	</footer>
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
+		</footer>
+	</div>
 
 </body>
 </html>
